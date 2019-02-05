@@ -1,10 +1,6 @@
 class AddDefaultToStudents < ActiveRecord::Migration
   def change
-    create_table :students do |t|
-      t.string :first_name
-      t.string :last_name
-
-      t.timestamps null: false
+    add_column :accounts, :max_users, :integer, :default => 10
     end
   end
 end
