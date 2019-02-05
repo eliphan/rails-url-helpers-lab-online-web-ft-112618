@@ -1,6 +1,6 @@
 <div>
   <% @students.each do |student| %>
-    <div><%= student_name = (student.first_name + " " + student.last_name).to_s %></div>
+    <div><%= student.first_name + " " + student.last_name %></div>
     binding.pry
     <div><%= link_to student_name, students_path(students.id) %></div>
   <% end %>
