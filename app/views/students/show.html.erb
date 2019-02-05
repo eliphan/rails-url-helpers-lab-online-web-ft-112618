@@ -5,3 +5,4 @@
 <% else %>
   <%= "This student is currently inactive." %>
 <% end %>
+<%= link_to @student.active, student_path(student.active) %>
